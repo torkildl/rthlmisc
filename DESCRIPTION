@@ -6,6 +6,6 @@ Author: Torkild H Lyngstad
 Maintainer: Torkild H Lyngstad <torkild.lyngstad@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: Creative Commons
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true

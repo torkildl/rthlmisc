@@ -22,7 +22,6 @@
 #' multiplot(plotlist = c(aplot, anotherplot, athirdplot), cols = 3)
 #' multiplot(plotlist = c(aplot, anotherplot, athirdplot, finalplot), cols = 2)
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
-    library(grid)
 
     # Make a list from the ... arguments and plotlist
     plots <- c(list(...), plotlist)
@@ -44,7 +43,7 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
     } else {
         # Set up the page
         grid::grid.newpage()
-        grid::pushViewport(viewport(layout = grid::grid.layout(nrow(layout), ncol(layout))))
+        grid::pushViewport(grid::viewport(layout = grid::grid.layout(nrow(layout), ncol(layout))))
 
         # Make each plot, in the correct location
         for (i in 1:numPlots) {

@@ -1,0 +1,26 @@
+---
+title: "Here goes the title"
+subtitle: "Longer subtitle goes here"
+runhead: Running head
+author:
+- affiliation: Department of Sociology and Human Geography, University of Oslo. Postboks 1096 Blindern, 0317 OSLO, Norway. E-mail t.h.lyngstad@sosgeo.uio.no.
+  name: Torkild Hovde Lyngstad
+date: \today
+keywords: some, keywords, here
+abstract: The abstract can be pretty long.
+thanks: The authors are grateful for various stuff.
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: xelatex
+  html_document: default
+  word_document: default
+bibliography: /home/torkildl/Dropbox/Literature/thl-main-library.bib
+csl: /home/torkildl/Dropbox/Literature/csl-files/american-sociological-review.csl
+anonymous: yes
+fontsize: 12pt
+geometry: margin=2cm
+---
+
+

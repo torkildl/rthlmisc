@@ -1,0 +1,3 @@
+name: THL Manuscript (pdf)
+description: A standard ms format with XeLaTeX.
+create_dir: false

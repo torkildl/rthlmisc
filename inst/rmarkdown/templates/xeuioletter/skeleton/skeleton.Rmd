@@ -1,0 +1,12 @@
+---
+title: Title of letter
+mytitle: Professor
+date: \today
+signed: Torkild Hovde Lyngstad
+recipient: To whom it may concern
+heading: Letter title
+closing: With very best wishes,
+english: yes
+---
+
+Lorem ipsum.

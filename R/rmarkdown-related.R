@@ -77,11 +77,12 @@
 #'
 
 
-thlms <- function(..., keep_tex = TRUE, citation_package = 'natbib', collapse = FALSE) {
+thlms <- function(..., keep_tex = TRUE, citation_package = 'natbib', collapse = FALSE, latex_engine='xelatex') {
 
     template <- system.file("rmarkdown", "templates", "thl-ms", "resources", "template.tex",
                             package="rthlmisc")
     base <- inherit_pdf_document(..., template = template,
+                                 latex_engine = latex_engine,
                                  keep_tex = keep_tex,
                                  citation_package = citation_package)
 

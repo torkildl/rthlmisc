@@ -1,0 +1,29 @@
+\documentclass[$if(dept)$$dept$$else$iss$endif$,$if(english)$english$else$norsk$endif$]{xeuioletter2}
+\signature{$signed$}
+\newcommand{\signaturepath}{/home/torkildl/Dropbox/private/Personal_info/signature.png}
+$if(signaturepath)$\renewcommand{\signaturepath}{$signaturepath$}$endif$
+\mytitle{$mytitle$} %% Note! All lowercase
+\oursect{Social Inequalities and Population Dynamics group}
+\ourphone{+47 92647880}
+\ouremail{t.h.lyngstad@sosgeo.uio.no}
+\ourweb{torkildl.github.io}
+\ourtwitter{@torkildl}
+$if(ourref)$\ourref{$ourref$}$endif$
+$if(yourref)$\yourref{$yourref$}$endif$
+\usepackage{textcomp}
+\usepackage{fontspec}
+\setmainfont{Equity Text B}
+\setsansfont{Concourse T4}
+\setmonofont{Roboto}
+\begin{document}
+\begin{letter}{$recipient$}
+$if(heading)$\opening{$heading$}$else$\opening{YAML HEADING MISSING}$endif$
+
+$body$
+
+$if(closing)$\closing{$closing$}$else$\closing{}$endif$
+$if(cc)$\cc{$cc$}$endif$
+$if(encl)$\encl{$encl$}$endif$
+
+\end{letter}
+\end{document}

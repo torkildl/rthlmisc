@@ -9,13 +9,7 @@ date: \today
 keywords: some, keywords, here
 abstract: The abstract can be pretty long.
 thanks: The authors are grateful for various stuff.
-output:
-  pdf_document:
-    fig_caption: yes
-    keep_tex: yes
-    latex_engine: xelatex
-  html_document: default
-  word_document: default
+output: rthlmisc::thlms
 bibliography: /home/torkildl/Dropbox/Literature/thl-main-library.bib
 csl: /home/torkildl/Dropbox/Literature/csl-files/american-sociological-review.csl
 anonymous: yes
